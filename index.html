@@ -57,4 +57,202 @@
         }
 
         .btn-acessibilidade {
-            background-color: var(--
+            background-color: var(--cor-destaque);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-acessibilidade:hover {
+            background-color: #2980b9;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Títulos */
+        h1, h2, h3 {
+            font-family: 'Paytone One', sans-serif;
+            color: var(--cor-primaria);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            border-bottom: 4px solid var(--cor-destaque);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Estilo dos Textos Introdutórios */
+        .biografia {
+            background-color: var(--cor-card);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .biografia p {
+            margin-bottom: 15px;
+        }
+
+        /* Cards do Glossário */
+        .glossario {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card-termo {
+            background-color: var(--cor-card);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--cor-destaque);
+            transition: transform 0.2s ease;
+        }
+
+        .card-termo:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-termo a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--cor-destaque);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card-termo a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seção do Semáforo */
+        .projeto-destaque {
+            text-align: center;
+            background-color: var(--cor-card);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn-simulacao {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn-simulacao:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        video {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="acessibilidade-panel">
+        <span>Tamanho do Texto:</span>
+        <button class="btn-acessibilidade" onclick="alterarFonte(-10)">A-</button>
+        <button class="btn-acessibilidade" onclick="alterarFonte(0)">A</button>
+        <button class="btn-acessibilidade" onclick="alterarFonte(10)">A+</button>
+    </div>
+
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>Visão em Construção: A Lente da Inovação Científica</h1>
+        </div>
+
+        <div class="biografia">
+            <p><strong>Minha biografia:</strong> Sou um site construído para apresentação dos trabalhos desenvolvidos no decorrer da Jornada 2 no grupo de estudos Formadores em Ação do Projeto Integrador: Inteligência Artificial e Tecnologias.</p>
+            <p>Esse Projeto Integrador é desenvolvido no Ensino Médio, com estudantes da 2ª série, e faz parte do Itinerário Formativo de Aprofundamento das áreas de Matemática e suas Tecnologias, e Ciências da Natureza e suas Tecnologias.</p>
+            <p>Nesta jornada, o que nos movimentou foi a questão motriz: <strong>Como a ciência, a tecnologia e as ferramentas de IA contribuem para a melhoria da visão das pessoas?</strong></p>
+        </div>
+
+        <h2>Glossário de Termos da Física e Robótica</h2>
+
+        <div class="glossario">
+            <div class="card-termo">
+                <h3>Óptica</h3>
+                <p>Área da Física que estuda a luz e os fenômenos associados a ela, incluindo sua propagação, refração, reflexão e a interação com a visão humana (como a formação de imagens no olho). No contexto do material, estuda-se como a luz e as cores são percebidas pelo sistema visual.</p>
+            </div>
+
+            <div class="card-termo">
+                <h3>Daltonismo (Discromatopsia)</h3>
+                <p>Uma limitação sensorial genética na qual o olho humano possui ausência ou anomalia em células da retina chamadas cones. Não se trata de uma doença, mas de uma variação que limita a capacidade de filtrar e distinguir determinados comprimentos de onda da luz.</p>
+                <a href="https://brasilescola.uol.com.br/biologia/daltonismo.htm" target="_blank">Ler mais (Fonte)</a>
+            </div>
+
+            <div class="card-termo">
+                <h3>Arduino (Uno R3)</h3>
+                <p>Uma placa de desenvolvimento de hardware programável que funciona como um microcontrolador. Ele é capaz de processar informações recebidas por sensores e controlar diferentes componentes elétricos, servindo como base para automação.</p>
+                <a href="https://sketchfab.com/3d-models/arduino-compativel-uno-smd-4088843133774a798e714cd05000ec66" target="_blank">Ver Modelo 3D</a>
+            </div>
+
+            <div class="card-termo">
+                <h3>Tinkercad</h3>
+                <p>Uma plataforma e simulador virtual on-line que permite aos usuários projetar, testar e demonstrar circuitos elétricos e programações sem a necessidade de componentes físicos. Utilizado aqui para a montagem digital do semáforo acessível.</p>
+                <a href="https://www.tinkercad.com/" target="_blank">Conhecer o Tinkercad</a>
+            </div>
+        </div>
+
+        <div class="projeto-destaque">
+            <h2>Semáforo Acessível</h2>
+            <p>Confira como a tecnologia pode ser aplicada para criar espaços mais inclusivos no trânsito.</p>
+            
+            <a href="https://www.tinkercad.com/things/k1RXY1fsCcH-equipemorcegossemaforo-ifa?sharecode=z3eSTDTi9waGKwQko5TUvtq1cHlmj6ObYXnf-xIcuLw" target="_blank" class="btn-simulacao">Acesse a Simulação no Tinkercad</a>
+            
+            <p style="margin-top: 20px; margin-bottom: 10px;">Para saber mais sobre o projeto, assista ao vídeo:</p>
+            
+            <video width="100%" max-width="640" controls>
+                <source src="Semáforo_Inclusivo_DepoisdoFeedback.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução deste vídeo.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        let tamanhoFonteAtual = 100; // Tamanho base em porcentagem
+
+        function alterarFonte(mudanca) {
+            if (mudanca === 0) {
+                tamanhoFonteAtual = 100; // Restaura o tamanho original ao clicar no "A"
+            } else {
+                tamanhoFonteAtual += mudanca;
+            }
+
+            // Define limites para a fonte não ficar nem minúscula nem gigante
+            if (tamanhoFonteAtual < 80) tamanhoFonteAtual = 80;
+            if (tamanhoFonteAtual > 160) tamanhoFonteAtual = 160;
+
+            // Aplica a alteração no elemento root (body)
+            document.body.style.fontSize = tamanhoFonteAtual + "%";
+        }
+    </script>
+</body>
+</html>
